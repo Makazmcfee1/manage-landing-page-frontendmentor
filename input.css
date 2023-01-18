@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+background-image:url('./images/bg-tablet-pattern.svg');
+background-repeat: no-repeat;
+background-size: 800px;
+/*background-position: 90% -25%; */
+}
+
+.footer{
+
+    background-color:rgb(36,46,80);
+} 
