@@ -60,6 +60,13 @@ body {
   line-height: inherit;
   /* 2 */
 }
+body{
+
+  background-image:url('/images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%; 
+  }
 
 /*
 1. Add the correct height in Firefox.
@@ -591,9 +598,7 @@ video {
   max-width: 72rem;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
+
 
 .flex-row {
   flex-direction: row;
