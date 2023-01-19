@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.footer{
-
-    background-color:rgb(36,46,80);
-} 
+.footer {
+  background-color: rgb(36, 46, 80);
+}
