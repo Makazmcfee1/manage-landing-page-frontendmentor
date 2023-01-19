@@ -68,6 +68,52 @@ body{
   background-position: 90% -25%; 
   }
 
+@media(max-width:576px){
+body{
+  background-position:50px -50px;
+  background-size:500px;
+}
+}
+/* hamburger menu */ 
+.hamburger{
+  cursor:pointer;
+  width:24px;
+  height:24px;
+  transition:all 0.25s;
+  position:relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+  position:absolute;
+  top:0;
+  left:0;
+  width:24px;
+  height:2px;
+  background:#000;
+  transform:rotate(0);
+  transition:all 0.5s;
+}
+.hamburger-middle{
+  transform:translateY(7px);
+}
+.hamburger-bottom{
+  transform:translateY(14px);
+}
+.open{
+  transform:rotate(90deg);
+  transform:translateY(0px);
+}
+.open .hamburger-top{
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+  display: none;
+}
+.open .hamburger-bottom{
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
@@ -163,35 +209,13 @@ sup {
 3. Remove default padding in all browsers.
 */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  font-weight: inherit;
-  /* 1 */
-  line-height: inherit;
-  /* 1 */
-  color: inherit;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  padding: 0;
-  /* 3 */
-}
+
 
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
 
-button,
-select {
-  text-transform: none;
-}
+
 
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
@@ -204,17 +228,7 @@ select {
   top:1.5rem;
 
 } 
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-  -webkit-appearance: button;
-  /* 1 */
-  background-color: transparent;
-  /* 2 */
-  background-image: none;
-  /* 2 */
-}
+
 
 /*
 Use the modern Firefox focus style for all focusable elements.
@@ -566,9 +580,7 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
+
 
 .hidden {
   display: none;
